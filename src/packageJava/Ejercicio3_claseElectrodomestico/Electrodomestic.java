@@ -108,6 +108,7 @@ public class Electrodomestic {
 		return this.peso;
 	}
 	
+	//MÉTODO PARA VERIFICAR EL COLOR
 	public void verificaColor(String colour) {//blanco, negro, rojo, azul y gris
 		switch("colour") {
 			case "blanco":
@@ -128,7 +129,7 @@ public class Electrodomestic {
 		}
 		
 	}
-	
+	//MÉTODO PARA VERIFICAR LA LETRA CONSUMO
 	public void verificaConsumo(char consumo) {
 		String consume = "ABCDEF";
 		for(int i = 0; i < consume.length(); i++) {
@@ -138,6 +139,7 @@ public class Electrodomestic {
 		}
 	}
 	
+	//MÉTODO PARA IMPRIMIR TODOS LOS ATRIBUTOS
 	public String toString() {
 		return "La descripcion del electrodoméstico  es : \nColor = " + this.color +
 				"\nConsumo = " + this.consumoEnergetico + "\nPrecio = " + this.precioBase +

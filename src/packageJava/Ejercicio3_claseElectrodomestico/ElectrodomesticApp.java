@@ -14,14 +14,12 @@ public class ElectrodomesticApp {
 	}
 
 	public static void inicia() {
-		Scanner ask = new Scanner(System.in);
-		boolean respuesta = true;
-		
+		Scanner ask = new Scanner(System.in);	
 		System.out.println("Desea hacer la busqueda de un electrodomestico?\nMarque (1) para si, \nMarque (2) para cerrar");
 		int eleccion = ask.nextInt();
 		
 		if(eleccion == 1) {
-			respuesta = false;
+			
 			do {
 				System.out.println("Indique la característica del electrodomestico \nColor? (blanco, negro, rojo, azul y gris)");
 				String color = ask.next().toLowerCase();
@@ -37,8 +35,8 @@ public class ElectrodomesticApp {
 				System.out.println(elect1.toString());
 				System.out.println("Desea hacer la busqueda de un electrodomestico?\nMarque (1) para si, \nMarque (2) para cerrar");
 				eleccion = ask.nextInt();
-			}while(!false);
-			
+			}while(eleccion == 1);
+			System.out.println("Adiós..");
 		} else {
 			System.out.println("Adiós..");
 		}
